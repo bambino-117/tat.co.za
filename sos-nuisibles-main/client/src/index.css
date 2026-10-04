@@ -74,7 +74,7 @@ h1 em, h2 em { color: #ff4f9a; font-style: normal; }
 .marquee-track svg { flex: 0 0 auto; width: 13px; }
 
 .services-section { position: relative; color: #fff7e9; padding: 120px clamp(24px, 8vw, 128px) 830px; background: #07172b; }
-.services-section::before { content: ''; position: absolute; inset: 0; background: url('/images/service-background.svg') center / cover no-repeat; opacity: .70; pointer-events: none; }
+.services-section::before { content: ''; position: absolute; inset: 0; background: url('/sos-nuisibles/images/service-background.svg') center / cover no-repeat; opacity: .70; pointer-events: none; }
 .split-heading { position: relative; z-index: 1; display: flex; justify-content: space-between; align-items: flex-end; gap: 35px; max-width: 1210px; margin: auto auto 62px; }
 .dark-eyebrow { color: #d92974; }
 h2 { margin-bottom: 0; font-size: clamp(62px, 7vw, 108px); }

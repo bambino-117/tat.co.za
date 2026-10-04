@@ -20,6 +20,7 @@ import { type ChangeEvent, type FormEvent, useEffect, useMemo, useState } from "
 
 const whatsappBaseUrl = "https://wa.me/33678785877?text=";
 const whatsappUrl = `${whatsappBaseUrl}${encodeURIComponent("Bonjour SOS NUISIBLES, j'ai besoin d'une intervention.")}`;
+const imageBaseUrl = `${import.meta.env.BASE_URL}images/`;
 
 const services = [
   {
@@ -58,10 +59,10 @@ const contactOptions = [
 ];
 
 const heroSlides = [
-  "/images/hero-scene-01.svg",
-  "/images/hero-scene-02.svg",
-  "/images/hero-scene-03.svg",
-  "/images/hero-scene-04.svg",
+  `${imageBaseUrl}hero-scene-01.svg`,
+  `${imageBaseUrl}hero-scene-02.svg`,
+  `${imageBaseUrl}hero-scene-03.svg`,
+  `${imageBaseUrl}hero-scene-04.svg`,
 ];
 
 const defaultForm = {
@@ -118,7 +119,7 @@ export default function Home() {
     <div className="site-shell overflow-x-clip bg-[#07172b] text-[#fff7e9]">
       <header className="site-header">
         <a className="brand" href="#accueil" aria-label="SOS NUISIBLES — accueil">
-          <img src="/images/brand-badge.svg" alt="" className="brand-mark" />
+          <img src={`${imageBaseUrl}brand-badge.svg`} alt="" className="brand-mark" />
           <span className="brand-copy" aria-label="SOS NUISIBLES">
             <b>SOS</b>
             <strong>NUISIBLES</strong>
@@ -293,7 +294,7 @@ export default function Home() {
 
         <section className="contact-section" id="contact" aria-labelledby="contact-title">
           <div className="contact-image" aria-hidden="true">
-            <img src="/images/cta-signal.svg" alt="" />
+            <img src={`${imageBaseUrl}cta-signal.svg`} alt="" />
           </div>
           <div className="contact-overlay" />
           <div className="contact-content">
@@ -341,7 +342,7 @@ export default function Home() {
 
       <footer className="site-footer">
         <a className="brand footer-brand" href="#accueil" aria-label="Retour en haut">
-          <img src="/images/brand-badge.svg" alt="" className="brand-mark" />
+          <img src={`${imageBaseUrl}brand-badge.svg`} alt="" className="brand-mark" />
           <span className="brand-copy"><b>SOS</b><strong>NUISIBLES</strong></span>
         </a>
         <div className="footer-meta">
